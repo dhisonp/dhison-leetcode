@@ -1,0 +1,15 @@
+nums = [1, 2, 3, 4]
+products = []
+
+Loop 1
+i = 0, products = [1]
+i = 1, products = [1,1]
+i = 2, products = [1,1,2]
+i = 3, products = [1,1,2,6]
+
+product = null
+i = 3, product =  1, products = [ 1, 1,2,6]
+i = 2, product =  4, products = [ 1, 1,8,6]
+i = 1, product = 12, products = [ 1,12,8,6]
+i = 0, product = 24, products = [24,12,8,6]
+

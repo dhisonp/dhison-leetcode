@@ -25,8 +25,7 @@ var maxProduct = function (nums) {
         product = product * value
         if (high < product) high = product
     }
-
-    return highk
+    return high
 }
 
 console.log(maxProduct(input))

@@ -1,4 +1,4 @@
-//UNFINISHED: Too slow.
+//UNFINISHED: Too slow. (O)n^3
 const add = (a, b) => {
     return a + b
 }
@@ -19,20 +19,20 @@ var threeSum = function (nums) {
     var outputs = []
     for (var i = 0; i < nums.length; i++) {
         for (var j = nums.length - 1; j >= 0; j--) {
-            console.log("----------------")
-            console.log("[i,j]: " + i, j)
+            // console.log("----------------")
+            // console.log("[i,j]: " + i, j)
             var store = [nums[i], nums[j]]
-            console.log("1. " + store)
+            // console.log("1. " + store)
 
             var sum = store.reduce(add, 0)
             var nSum = -sum
-            console.log("2. Sum: " + sum)
+            // console.log("2. Sum: " + sum)
 
             var done = false
             for (var k = i + 1; k < j; k++) {
                 if (nums[k] === nSum) {
                     store.push(nums[k])
-                    console.log("-- 3. Out: " + store)
+                    // console.log("-- 3. Out: " + store)
                     outputs.push(store)
                     break;
                 }
